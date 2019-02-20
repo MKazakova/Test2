@@ -7,13 +7,16 @@ public class TimeDuration {
     private int nbSeconds;
 
     public TimeDuration(int nbSeconds) {
-    	if (nbSeconds<0)
+    	if (nbSeconds<0){
 			try {
 				throw new BadBadValueException();
 			} catch (BadBadValueException e) {
 				e.printStackTrace();
 			}
-        this.nbSeconds = nbSeconds;
+	}
+	else{
+        	this.nbSeconds = nbSeconds;
+	}
     }
 
     public String toString() {
