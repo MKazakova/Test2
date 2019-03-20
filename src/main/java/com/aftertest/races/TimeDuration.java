@@ -37,7 +37,8 @@ public class TimeDuration {
         return nbSeconds;
     }
 
-    void printResults() {
-
+    public boolean equals(TimeDuration t) {
+    	return getNbSeconds()==t.getNbSeconds();
     }
+
 }
